@@ -14,17 +14,29 @@
     emailLink.textContent = site.email;
   }
 
-  function bindLink(attr, url, fallbackText) {
-    var el = document.querySelector(attr);
-    if (!el || !url) return;
-    el.href = url;
-    el.hidden = false;
-    if (fallbackText) el.textContent = fallbackText;
+  function normalizeUrl(url) {
+    if (!url) return "";
+    if (url.charAt(0) === "@") return "https://t.me/" + url.slice(1);
+    if (/^https?:\/\//i.test(url)) return url;
+    if (/^t\.me\//i.test(url)) return "https://" + url;
+    return url;
   }
 
-  bindLink("[data-telegram]", site.telegram, "Telegram");
-  bindLink("[data-github]", site.github, "GitHub");
-  bindLink("[data-leetcode]", site.leetcode, "LeetCode");
+  function bindLink(attr, url, fallbackText, external) {
+    var el = document.querySelector(attr);
+    if (!el || !url) return;
+    el.href = normalizeUrl(url);
+    el.hidden = false;
+    if (fallbackText) el.textContent = fallbackText;
+    if (external) {
+      el.target = "_blank";
+      el.rel = "noopener noreferrer";
+    }
+  }
+
+  bindLink("[data-telegram]", site.telegram, "Telegram", true);
+  bindLink("[data-github]", site.github, "GitHub", true);
+  bindLink("[data-leetcode]", site.leetcode, "LeetCode", true);
 
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("nav");

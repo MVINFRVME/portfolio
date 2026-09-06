@@ -67,8 +67,7 @@
           <h2>Подход к задачам</h2>
           <p class="lead">
             От потребности бизнеса до инструмента, которым пользуются каждый
-            день — с архитектурой, рисками и готовностью доработать по обратной
-            связи.
+            день — с архитектурой и готовностью доработать по обратной связи.
           </p>
           <div class="steps">
             <article class="step">
@@ -267,7 +266,7 @@
               <div class="case-n">03</div>
               <div>
                 <h3>CLI-агент с tool calling</h3>
-                <p class="case-place">Проект подготовки к техсобесам</p>
+                <p class="case-place">Проект подготовки к техническим собеседованиям</p>
                 <div class="case-grid">
                   <div>
                     <h4>Задача</h4>
@@ -287,9 +286,9 @@
                   <div>
                     <h4>Эффект</h4>
                     <p>
-                      Подготовка к собесам стала системной: вопросы по темам,
-                      оценка ответов и прогресс в одном цикле — без хаотичного
-                      гугления и «просто поболтать с чатом».
+                      Подготовка к техническим собеседованиям стала системной:
+                      вопросы по темам, оценка ответов и прогресс в одном цикле —
+                      без хаотичного поиска и «просто поболтать с чатом».
                     </p>
                   </div>
                 </div>
@@ -353,38 +352,50 @@
 
       <section class="section" id="ship">
         <div class="wrap">
-          <h2>Реализованные проекты</h2>
+          <h2>Ещё из коммерции</h2>
           <p class="lead">
-            С нуля или в доработке — запущено и работает у команд: боты, сервисы,
-            импорт данных, поддержка.
+            Конкретные сервисы из резюме — помимо кейсов выше.
           </p>
           <ul class="ship-list">
             <li>
-              <strong>Золотое Яблоко</strong>
+              <strong>Конкурсная админка Золотого Яблока</strong>
               <span
-                >Рассылка оперативных метрик логистики; рефакторинг сервиса
-                отчётов (ClickHouse / Trino / PostgreSQL / MS SQL).</span
+                >Основной сервис для администрирования и проведения конкурсов.
+                Полный цикл: публикация постов, выбор победителей, валидация
+                данных, интеграция с внешними системами.</span
               >
             </li>
             <li>
-              <strong>Поставщики и документы</strong>
+              <strong>Единый сервис отчётов логистики и маркетинга</strong>
               <span
-                >Streamlit для претензионного отдела: поставщики и претензионные
-                документы в одном интерфейсе.</span
+                >Рефакторинг под несколько СУБД (ClickHouse, Trino, PostgreSQL,
+                MS SQL): синхронные запросы заменил на асинхронные, ускорил
+                сборку отчётов, создал структуру и интерфейс под дальнейший
+                рост.</span
               >
             </li>
             <li>
-              <strong>Файлы → система</strong>
+              <strong>Сервис конвертации</strong>
               <span
-                >Импорт Excel в PostgreSQL с шаблонами и валидацией: типовой
-                ручной разбор с часов до минут.</span
+                >Streamlit-сервис с шаблонами загрузки, кастомной валидацией и
+                разбором ошибок. Основной кейс — загрузка Excel-файлов в
+                PostgreSQL.</span
               >
             </li>
             <li>
-              <strong>Поддержка</strong>
+              <strong>Оперативные метрики логистики</strong>
               <span
-                >Боты для первой линии и мониторинга, теги по отделам, поиск по
-                сотрудникам (Palantir).</span
+                >Сервис собирает показатели, Telegram-бот рассылает их команде
+                несколько раз в день — бизнес видит операционку без ручной
+                сводки в таблицах.</span
+              >
+            </li>
+            <li>
+              <strong>Поддержка и мониторинг</strong>
+              <span
+                >Боты для первой линии и команды мониторинга с тегами по отделам
+                ответственных и сотрудников. Django-сервис Palantir — удобный
+                поиск по сотрудникам внутри компании и настройка алертов.</span
               >
             </li>
           </ul>
@@ -393,31 +404,33 @@
 
       <section class="section" id="experience">
         <div class="wrap">
-          <h2>Где это происходило</h2>
-          <p class="lead">Коротко. Подробности — в кейсах выше.</p>
+          <h2>Коммерческий опыт</h2>
           <div class="timeline">
             <article class="job">
-              <div class="job-dates">сейчас</div>
+              <div class="job-dates">2026 г.</div>
               <div>
-                <h3>Python / data engineering</h3>
-                <p class="meta">
-                  Управляющая компания · LitEnergy, PŪSY, YESBABY и др.
-                </p>
+                <h3>
+                  Управляющая компания (LitEnergy, PŪSY, YESBABY, SOGŪ, LUV,
+                  Boostlife, ARC)
+                </h3>
+                <p class="meta">Python Developer · Backend / Data Engineering</p>
                 <p>
-                  Сервис Analytics, ETL, ClickHouse, Airflow, дашборды для топов.
-                  ИИ в процессе разработки: агенты, MCP, единые правила кода.
+                  Разработал аналитический сервис с нуля при помощи агентов —
+                  без хаотичного углубления и без самостоятельного поиска в
+                  интернете. Занимался построением ETL-пайплайнов. Развернул и
+                  настроил ClickHouse. Настроил и запустил OLAP-кубы. Поднял
+                  брокер сообщений NATS с JetStream.
                 </p>
               </div>
             </article>
             <article class="job">
-              <div class="job-dates">ранее</div>
+              <div class="job-dates">2024 — 2026 гг.</div>
               <div>
-                <h3>Python-разработчик</h3>
-                <p class="meta">Золотое Яблоко · логистика, маркетинг, retail</p>
+                <h3>Золотое Яблоко</h3>
+                <p class="meta">Python-разработчик</p>
                 <p>
-                  FastAPI и Django: боты, внутренние сервисы, отчёты, претензии,
-                  импорт данных. Сначала — мониторинг и поддержка: инциденты,
-                  сеть, Active Directory.
+                  Высоконагруженные сервисы на FastAPI и Django, чат-боты,
+                  внутренние инструменты на Streamlit.
                 </p>
               </div>
             </article>
@@ -427,36 +440,58 @@
 
       <section class="section" id="stack">
         <div class="wrap">
-          <h2>Чем собираю</h2>
+          <h2>Стек технологий</h2>
           <p class="lead">
-            Инструменты, не витрина технологий. Python — основная рука.
+            Чем пользуюсь: от бэкенда и работы с данными до ИИ-инструментов и
+            инфраструктуры.
           </p>
           <div class="stack">
             <span class="tag">Python</span>
             <span class="tag">FastAPI</span>
             <span class="tag">Django</span>
+            <span class="tag">Flask</span>
+            <span class="tag">SQLAlchemy</span>
+            <span class="tag">SQLModel</span>
+            <span class="tag">Alembic</span>
+            <span class="tag">Pydantic</span>
+            <span class="tag">asyncio</span>
             <span class="tag">SQL</span>
             <span class="tag">PostgreSQL</span>
             <span class="tag">ClickHouse</span>
+            <span class="tag">Trino</span>
+            <span class="tag">MS SQL Server</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Redis</span>
             <span class="tag">Airflow</span>
+            <span class="tag">MinIO</span>
+            <span class="tag">NATS</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">Superset</span>
+            <span class="tag">eMondrian</span>
+            <span class="tag">aiogram</span>
+            <span class="tag">RAG</span>
             <span class="tag">Cursor</span>
             <span class="tag">MCP</span>
             <span class="tag">агенты</span>
-            <span class="tag">RAG</span>
-            <span class="tag">Streamlit</span>
-            <span class="tag">aiogram</span>
-            <span class="tag">Docker</span>
+            <span class="tag">Ollama</span>
+            <span class="tag">Groq</span>
             <span class="tag">Bitrix24 API</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Linux</span>
+            <span class="tag">k8s</span>
+            <span class="tag">Git</span>
+            <span class="tag">pytest</span>
           </div>
         </div>
       </section>
 
       <section class="section" id="contact">
         <div class="wrap">
-          <h2>Давайте поговорим</h2>
+          <h2>Контакты</h2>
           <p class="lead">
-            Если нужен человек, который сам дойдёт до процесса и принесёт
-            рабочий пилот — напишите.
+            Если нужен человек, который дойдёт до процесса, соберёт рабочий
+            пилот, доработает или зарефакторит текущее решение — напишите.
           </p>
           <div class="contact-box">
             <a data-email href="mailto:hello@example.com">hello@example.com</a>
@@ -470,11 +505,14 @@
 
     <footer class="site-footer">
       <div class="wrap footer-inner">
-        <span data-name>Имя Фамилия</span>
-        <span>Английский C1 · УГГУ, 2022</span>
+        <div>
+          <div data-name>Илья Полухин</div>
+          <div>2026 год</div>
+        </div>
+        <span>AI Engineer</span>
       </div>
     </footer>
-    <script src="js/profile.js?v=2"></script>
-    <script src="js/main.js?v=2"></script>
+    <script src="js/profile.js?v=3"></script>
+    <script src="js/main.js?v=3"></script>
   </body>
 </html>
